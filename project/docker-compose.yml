@@ -18,3 +18,16 @@ services:
       - ./init_sql:/docker-entrypoint-initdb.d
     networks:
       - backend
+  #app:
+    #build:
+      #context: .
+      #dockerfile: Dockerfile
+    #environment:
+      #- DHOST=mysql
+    #networks:
+      #- backend
+      #- frontend
+    #ports:
+      #- 5000:5000
+    #depends_on:
+      #- database
